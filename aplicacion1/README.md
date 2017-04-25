@@ -10,8 +10,10 @@ Donde 'aplicacion1' es el nombre de la carpeta que se va a crear
 
 Las herramientas que se va a usar son:
 1. Sails
-  *sails new
-  -sails lift
+  * sails new
+  1. hvdfb
+  2. djfhbvj
+  - sails lift
 2. Docker
 3. Webstorm
 4. Postman
