@@ -1,7 +1,22 @@
 # Ejemplo de Marcdown
+
+**Ejemplo de Emphasis**
+
 Los primeros **comandos** son:
 sails new 'aplicacion1'
 Donde 'aplicacion1' es el nombre de la carpeta que se va a crear
+
+**Ejemplo de Lista**
+
+Las herramientas que se va a usar son:
+1. Sails
+  *sails new
+  -sails lift
+2. Docker
+3. Webstorm
+4. Postman
+5. Dbeaver
+
 ## Header2
 ### Header3
 
