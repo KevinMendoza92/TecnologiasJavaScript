@@ -24,6 +24,9 @@ Las herramientas que se va a usar son:
 
 [Ir a google](https://www.google.com)
 
+**Ejemplo imagen**
+![Imagen](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
 ## Header2
 ### Header3
 
