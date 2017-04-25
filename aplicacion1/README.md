@@ -27,6 +27,22 @@ Las herramientas que se va a usar son:
 **Ejemplo imagen**
 ![Imagen](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
+##Codigo
+
+Para utilizar codigo necesitamos tres tildes al reves ``` tanto al inicio como al final del codigo que vamos a escribir.
+
+```
+String hola="Hola mundo"
+```
+
+```
+>> sails new aplicacion1
+>> cd aplicacion1
+>> sails lift
+2
+```
+Escogemos la opcion 2 y damos enter
+
 ## Header2
 ### Header3
 
