@@ -55,4 +55,8 @@ El nombre de la ****
 docker run --name postgreskevin -e POSTGRES_PASSWORD=123456 -e POSTGRES_USER=kevin -e POSTGRES_DB=kevin -p 5432:5432 -d postgres
 ```
 
+## MongoDB
+```
+docker run --name kevinMongoDB -p 27017:27017 -d mongo
+```
 
