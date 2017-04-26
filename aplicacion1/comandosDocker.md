@@ -52,7 +52,7 @@ El nombre de la ****
 
 ## Postgresql
 ```
-docker run --name postgreskevin -e POSTGRES_PASSWORD=123456 -e POSTGRES_USER=kevin -e POSTGRES_DB= politecnica -p 5432:5432 -d postgres
+docker run --name postgreskevin -e POSTGRES_PASSWORD=123456 -e POSTGRES_USER=kevin -e POSTGRES_DB=kevin -p 5432:5432 -d postgres
 ```
 
 
