@@ -15,3 +15,4 @@ El comando **lift** nos ayuda a levantar un proyecto **sails**.
 >> sails lift
 ```
 - Debemos de estar **dentro de la carpeta** del proyecto sails.
+
