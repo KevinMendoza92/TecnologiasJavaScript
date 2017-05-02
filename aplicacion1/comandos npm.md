@@ -6,5 +6,5 @@
 instalar las dependencias de sails  
 
 ```
-npom instal
+npm install
 ```

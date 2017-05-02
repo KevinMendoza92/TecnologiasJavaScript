@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-
+  connection: 'conexionMongodbDocker',
   attributes: {
 
     nombre:{
