@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'twj-raiz',
-  template: `
-  <h1>Hola</h1>`,
+  templateUrl:'./app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
@@ -15,10 +14,15 @@ export class AppComponent {
   constructor(){
     console.log("Constructor");
     this.holaMundo();
+    console.log(this.saludar(this.usuario.nombre, this.usuario.apellido));
   }
+
+
   holaMundo(){
     console.log("Hola mundo");
   }
+
+
   saludar(nombre: String,
           apellido?:String):String{
     return `Hola ${nombre} ${apellido}`;
