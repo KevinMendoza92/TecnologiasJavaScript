@@ -5,3 +5,14 @@ NO HACER ESTO
 <h3>Desarrollado por {{saludar(usuario.nombre,usuario.apellido)}}</h3>
 NO HACER ESTO
 <h3>{{usuario.nombre+" "+usuario.apellido}}</h3>
+<!-- no usar: <a href="{{url}}"-->
+<a [href] ="url">
+  <img src="https://angular.io/resources/images/logos/angular/angular.png" alt="logo angular">
+</a>
+OTRA FORMA
+<a [href] ="url">
+  <img [src]="src" alt="logo angular">
+</a>
+
+
+

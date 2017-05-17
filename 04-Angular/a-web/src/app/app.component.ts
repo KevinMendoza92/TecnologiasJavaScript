@@ -11,6 +11,9 @@ export class AppComponent {
     apellido: "Mendoza"
   }
 
+  url:String="https://angular.io";
+  src:String="https://angular.io/resources/images/logos/angular/angular.png";
+
   constructor(){
     console.log("Constructor");
     this.holaMundo();
