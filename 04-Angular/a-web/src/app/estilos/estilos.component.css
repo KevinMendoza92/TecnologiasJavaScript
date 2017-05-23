@@ -1,0 +1,18 @@
+p{
+  border: 10px;
+  border-style: solid;
+  border-color: brown;
+}
+
+h1{
+  color: white;
+  background-color: black;
+}
+
+#verde{
+  border-color: greenyellow;
+}
+
+.red{
+  color: red;
+}

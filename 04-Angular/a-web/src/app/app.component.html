@@ -5,13 +5,18 @@
 
 
 <h3>Segunda forma con []</h3> <!--usando comillas dobles se pone las variables, usando comillas simples se pone el texto o el valor-->
-<p>[innerText]="parrafo"</p> <!--Dentro de las "" van la variables que se quiere controlar  -->
+<p [innerText]="parrafo"></p> <!--Dentro de las "" van la variables que se quiere controlar  -->
 <p [style.color]="'white'"
    [style.background-color]="background"
    [innerText]="parrafo"></p>
 
 
 <input type="text" [value]="parrafo">
+<app-estilos></app-estilos>
+<app-estilos></app-estilos>
+
+
+
 <p id = "bind"></p>
 <p>Mantiene sincronizadas las variables de los componentes html</p>
 <br>
