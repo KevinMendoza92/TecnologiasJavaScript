@@ -7,19 +7,28 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   usuario: UsuarioInterface = {
-    nombre: "Kevin",
+    nombre: "",
     apellido: "Mendoza"
-  }
+  };
 
   url:String="https://angular.io";
   src:String="https://angular.io/resources/images/logos/angular/angular.png";
-
+/*
   constructor(){
     console.log("Constructor");
     this.holaMundo();
     console.log(this.saludar(this.usuario.nombre, this.usuario.apellido));
-  }
+  };*/
 
+  constructor(){
+    this.usuario.nombre = "Kev";
+    this.parrafo="hola hola";
+    setTimeout(()=>{
+      this.usuario.nombre="Kevin"
+    },3000);
+  }
+  parrafo:String = "";
+  background:String ="blue";
 
   holaMundo(){
     console.log("Hola mundo");

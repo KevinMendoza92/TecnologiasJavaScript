@@ -1,8 +1,43 @@
 <h1>Mi primer aplicacion en Angular</h1>
+<h2>Property Binding</h2>
+<h3>Primera forma con llaves dobles </h3>
+<p>{{parrafo}}</p>
+
+
+<h3>Segunda forma con []</h3> <!--usando comillas dobles se pone las variables, usando comillas simples se pone el texto o el valor-->
+<p>[innerText]="parrafo"</p> <!--Dentro de las "" van la variables que se quiere controlar  -->
+<p [style.color]="'white'"
+   [style.background-color]="background"
+   [innerText]="parrafo"></p>
+
+
+<input type="text" [value]="parrafo">
+<p id = "bind"></p>
+<p>Mantiene sincronizadas las variables de los componentes html</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
 SI HACER ESTO
+<!--usar doble llaves para cada una  -->
 <p>Gracias por su visita {{usuario.nombre}}{{usuario.apellido}}</p>
 NO HACER ESTO
 <h3>Desarrollado por {{saludar(usuario.nombre,usuario.apellido)}}</h3>
+<!--No se deberia hacer metodos cuando hay doble llaves  -->
 NO HACER ESTO
 <h3>{{usuario.nombre+" "+usuario.apellido}}</h3>
 <!-- no usar: <a href="{{url}}"-->
