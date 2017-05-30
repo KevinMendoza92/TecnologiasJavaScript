@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-inicio',
@@ -7,18 +7,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  nombre:string = "Kevin";
+  nombre: string = "Kevin";
+  //comand+a y luego command command+alt+l
+  arregloUsuario = [
+    {
+      nombre: "Kevin",
+      apellido: "Mendoza"
+    }, {
+      nombre: "Mashi",
+      apellido: "Correa"
+    }
+  ]
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
+
   //sintaxis de tipo void
-  cambiarNombre():void{
-    this.nombre="Rafico a Lenin ";
+  cambiarNombre(): void {
+    this.nombre = "Rafico a Lenin ";
   }
-  cambiarOtroNombre(){
-    this.nombre="Lenin a Rafico"
+
+  cambiarOtroNombre() {
+    this.nombre = "Lenin a Rafico"
+  }
+
+  cambianNombreInput(nombreEtiqueta) {
+    console.log(nombreEtiqueta.value);
+    console.log(nombreEtiqueta.type);
+    console.log(nombreEtiqueta.placeholder);
+    this.nombre = nombreEtiqueta.value;
   }
 
 
