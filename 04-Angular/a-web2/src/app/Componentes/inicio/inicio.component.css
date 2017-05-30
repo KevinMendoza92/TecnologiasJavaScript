@@ -1,0 +1,147 @@
+.lead{
+  font-size: 200%;
+  color: #cccccc;
+}
+.cabecera{
+  background-image: url("https://saew.epn.edu.ec/Imagenes/img/bgHead.png");
+  width: 100%;
+  min-width: 1024px;
+  height: 200px;
+  border-bottom: 5px solid #A60000;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.gris{
+  display: inline;
+  width: 100px;
+  float: left;
+}
+
+.cuadro{
+  background: #565656;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 3px 0 0 0;
+  height: 22px;
+  display: block;
+  width: 100%;
+  margin: 14px 0 0 0;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.campo{
+  border: 1px solid #565656;
+  height: 22px;
+  width: 100%;
+  margin: 14px 0 0 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.izquierda{
+  width: 495px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 0;
+  background: #FFFFFF;
+  display: inline;
+}
+
+.aviso {
+  background: #F4F4F4;
+  font-size: 11px;
+  color: #000000;
+  text-align: justify;
+  width: 90%;
+  height: 200px;
+  margin: 20px auto;
+  padding: 20px 5%;
+  border-width: thin;
+  border-top-style: solid;
+  border-top-color: #FDBE57;
+  border-bottom-style: solid;
+  border-left-color: #FDBE57;
+  border-bottom-color: #FDBE57;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-right-color: #FDBE57;
+}
+
+.footer {
+  background: #0d284d;
+  width: 100%;
+  min-width: 1024px;
+  height: 100px;
+  text-align: center;
+  border-top: 5px solid #A60000;
+  clear: both;
+  padding: 20px 0 0 0;
+  color: white;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.derecha{
+  margin-left: 24px;
+}
+
+.titulo{
+  background: #052E5E;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+  color: #FFFFFF;
+  margin: 0;
+  text-indent: 20px;
+  font-family: "open_sansregular";
+  font-weight: bold;
+}
+
+.a{
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+  color: #000000;
+  font-size: 12px;
+  padding: .5em 1em;
+}
+
+.b{
+  width: 500px;
+  height: 60px;
+  float: right;
+  margin: 30px 20px;
+  padding: 15px;
+  letter-spacing: 10px;
+  font-size: large;
+  color: slategray;
+}
+
+.d{
+  font-weight: 500;
+  color: #7952b3;
+  border-color: #7952b3;
+}
+.e{
+  font-size: 100%;
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffe484;
+  border-color: #ffe484;
+  background-color: #6f5499;
+}
+
+.z{
+   background-image: url("https://saew.epn.edu.ec/Imagenes/img/bgHead.png");
+}
