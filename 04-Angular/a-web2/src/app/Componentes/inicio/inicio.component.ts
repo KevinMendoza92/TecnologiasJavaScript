@@ -14,8 +14,8 @@ export class InicioComponent implements OnInit {
       nombre: "Kevin",
       apellido: "Mendoza"
     }, {
-      nombre: "Mashi",
-      apellido: "Correa"
+      nombre: "dssd",
+      apellido: "Cofsd"
     }
   ]
 
