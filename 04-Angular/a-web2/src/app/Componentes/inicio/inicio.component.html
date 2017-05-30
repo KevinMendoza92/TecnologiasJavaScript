@@ -1,4 +1,4 @@
-
+<!-- SAEW
 <link rel="stylesheet" href="/04-Angular/a-web2/src/assets/Bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="/04-Angular/a-web2/src/app/Componentes/inicio/inicio.component.css">
 
@@ -21,7 +21,7 @@
     <br>
     <br>
 
-    <!--Cuarta fila-->
+
     <div class="row">
 
       <div class="col-sm-6">
@@ -64,14 +64,14 @@
         <h1 class="titulo">Importante</h1>
         <div class="aviso">
           <p>Restablece la Contraseña del CORREO INSTITUCIONAL </p>
-          <br>
-          <br>
-          ¡ESCANEA el código QR!
-          <img src="/04-Angular/a-web2/src/assets/Bootstrap/imagenes/Captura.PNG" alt="Codigo QR">
+
+          <img src="/assets/Bootstrap/imagenes/Captura.PNG" alt="Codigo QR">
+          <p>¡ESCANEA el código QR!</p>
+
         </div>
 
         <div>
-          <img src="/04-Angular/a-web2/src/assets/Bootstrap/imagenes/Captura2.PNG" alt="calendario">
+          <img src="assets/Bootstrap/imagenes/Captura2.PNG" alt="calendario">
         </div>
 
         <br>
@@ -89,4 +89,14 @@
 
   </div>
 
+</div>
+-->
+
+<div class="container">
+  <input type="text" [value]="nombre">
+  {{nombre}}
+  <br>
+  <!-- parentesis dentro de las etiquetas se usa para aplicar un evento-->
+  <button class="btn btn-primary" (click)="cambiarNombre()">Cambiar Valor</button>
+  <button (blur)="cambiarOtroNombre()" >clic</button>
 </div>

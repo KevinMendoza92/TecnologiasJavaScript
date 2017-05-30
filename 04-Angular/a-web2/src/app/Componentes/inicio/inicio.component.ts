@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
+  nombre:string = "Kevin";
+
   constructor() { }
 
   ngOnInit() {
   }
+  //sintaxis de tipo void
+  cambiarNombre():void{
+    this.nombre="Rafico a Lenin ";
+  }
+  cambiarOtroNombre(){
+    this.nombre="Lenin a Rafico"
+  }
+
 
 }
