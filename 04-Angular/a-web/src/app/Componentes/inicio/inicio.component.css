@@ -1,0 +1,36 @@
+.lead{
+  font-size: 200%;
+  color: #cccccc;
+}
+.b{
+  font-size: 90%;
+  color: #cccccc;
+}
+
+.a{
+  color: #8e869d;
+  padding: .8em 10em;
+}
+
+.c{
+  font-size: 200%;
+}
+
+.d{
+  font-weight: 500;
+  color: #7952b3;
+  border-color: #7952b3;
+}
+.e{
+  font-size: 100%;
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffe484;
+  border-color: #ffe484;
+  background-color: #6f5499;
+}
