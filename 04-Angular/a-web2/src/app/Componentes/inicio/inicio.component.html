@@ -113,20 +113,45 @@
 <h1>BIENVENIDOS</h1>
 <H2>USUARIO CONECTADO</H2>
 <div class="row">
-  <div class="col-sm-4" *ngFor="let usuario of arregloUsuario">{{usuario.nombre}}>
-    <div class="card" style="width: 20rem;">
-      <div class="card-block">
-        <h4 class="card-title">{{usuario.nombre}}</h4>
+  <div  *ngFor="let usuario of arregloUsuario">
+    <div class="col-sm-4" *ngIf="usuario.conectado">
+    <div class="card" style="width: 20rem;" >
+      <div class="card-block" >
+        <h4 class="card-title" >{{usuario.nombre}}-{{usuario.conectado}}</h4>
         <p class="card-text">Nombre+{{usuario.apellido}}</p>
         <p href="#" class="btn btn-primary btn-block">Hola :)</p>
       </div>
     </div>
 
+    </div>
   </div>
 </div>
+
+<h2>PLANETAS DE STAR WARS</h2>
+<br>
+<button class="btn btn-outline-success" (click)="cargarPlanetas()" >Cargar planetas</button>
+<div>
+  <div *ngFor="let planeta of planetas">
+    <ul>
+      <li>{{planeta.name}}</li>
+    </ul>
+  </div>
+</div>
+
+<!--
+<p *ngIf="true">TRUE</p>
+<p *ngIf="false">FALSE</p>
+<p *ngIf="(1+1)==2">TRUE</p>
+<p *ngIf="(1+1)!=2">FALSE</p>
+<p *ngIf="Undefined">UNDEFINED</p>
+<p *ngIf="NULL">NULL</p>
+<p *ngIf="0">CER</p>
 <!--let variable nueva-->
+<!--
 <div>
   <ul>
     <li *ngFor="let usuario of arregloUsuario">{{usuario.nombre}}</li>
   </ul>
 </div>
+-->
+
