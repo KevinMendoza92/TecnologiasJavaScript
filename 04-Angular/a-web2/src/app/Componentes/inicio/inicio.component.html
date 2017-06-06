@@ -135,26 +135,27 @@
   <p align="center"> <button class="btn btn-outline-success" (click)="cargarPlanetas()" >Cargar Planetas</button></p>
   <br>
   <br>
-  <div >
+  <!--<div >
+
   <div class="row">
-    <div class="col-sm-6 " *ngFor = "let planeta of planetas; let i = index">
+    <div class="col-sm-4 " *ngFor = "let planeta of planetas; let i = index">
       <figure class="figure">
-        <img style="width: 300px" src="{{arregloImagenes[i]}}" class="figure-img img-fluid rounded" alt="{{planeta.name}}">
+        <img  src="{{arregloImagenes[i]}}" alt="{{planeta.name}}" width="200" height="200">
         <figcaption class="figure-caption">
-          <p><b>Nombre:</b> {{planeta.name}}</p>
-          <p><b>Periodo de rotacion:</b> {{planeta.rotation_period}}</p>
-          <p><b>Periodo orbital:</b> {{planeta.orbital_period}}</p>
-          <p><b>Diametro:</b> {{planeta.diameter}}</p>
-          <p><b>Clima:</b> {{planeta.diameter}}</p>
-          <p><b>Gravedad:</b> {{planeta.gravity}}</p>
-          <p><b>Terreno:</b> {{planeta.terrain}}</p>
-          <p><b>Superficie de agua:</b> {{planeta.surface_water}}</p>
-          <p><b>Poblacion:</b> {{planeta.population}}</p>
+          <li><b>Nombre:</b> {{planeta.name}}</li>
+          <li><b>Periodo de rotacion:</b> {{planeta.rotation_period}}</li>
+          <li><b>Periodo orbital:</b> {{planeta.orbital_period}}</li>
+          <li><b>Diametro:</b> {{planeta.diameter}}</li>
+          <li><b>Clima:</b> {{planeta.diameter}}</li>
+          <li><b>Gravedad:</b> {{planeta.gravity}}</li>
+          <li><b>Terreno:</b> {{planeta.terrain}}</li>
+          <li><b>Superficie de agua:</b> {{planeta.surface_water}}</li>
+          <li><b>Poblacion:</b> {{planeta.population}}</li>
         </figcaption>
       </figure>
     </div>
   </div>
-  </div>
+  </div>-->
 </div>
 </body>
 <!--

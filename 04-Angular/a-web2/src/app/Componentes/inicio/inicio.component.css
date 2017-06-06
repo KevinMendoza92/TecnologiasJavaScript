@@ -16,8 +16,10 @@
 .star{
   background-image: url("https://f4.bcbits.com/img/a1603003875_10.jpg");
     border-bottom: 5px solid #A60000;
-    height: 4000px;
+    height: 100%;
 }
+
+
 
 h1{
   color: #FFFFFF;
@@ -29,7 +31,7 @@ h2{
   font-size: 50px;
 }
 
-p{
+li{
   color: #FFFFFF;
   font-size: 20px;
 }
