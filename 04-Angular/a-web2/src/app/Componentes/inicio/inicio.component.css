@@ -3,7 +3,7 @@
   color: #cccccc;
 }
 .cabecera{
-  background-image: url("https://saew.epn.edu.ec/Imagenes/img/bgHead.png");
+  background-image: url("http://bibwp.ulpgc.es/mediatecaulpgc/wp-content/uploads/2014/03/Star-Wars.jpg");
   width: 100%;
   min-width: 1024px;
   height: 200px;
@@ -11,6 +11,27 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
+}
+
+.star{
+  background-image: url("https://f4.bcbits.com/img/a1603003875_10.jpg");
+    border-bottom: 5px solid #A60000;
+    height: 4000px;
+}
+
+h1{
+  color: #FFFFFF;
+  font-size: 75px;
+}
+
+h2{
+  color: #FFFFFF;
+  font-size: 50px;
+}
+
+p{
+  color: #FFFFFF;
+  font-size: 20px;
 }
 
 .gris{

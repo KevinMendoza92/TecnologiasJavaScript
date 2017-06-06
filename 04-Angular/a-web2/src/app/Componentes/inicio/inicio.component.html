@@ -1,7 +1,6 @@
-<!-- SAEW
 <link rel="stylesheet" href="/04-Angular/a-web2/src/assets/Bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="/04-Angular/a-web2/src/app/Componentes/inicio/inicio.component.css">
-
+<!-- SAEW
 <div >
 
   <div class="container">
@@ -110,8 +109,11 @@
 <h1 (click)="cambianNombreInput(nombreEtiqueta)">Lenin a Rafico</h1>
 </div>-->
 
-<h1>BIENVENIDOS</h1>
-<H2>USUARIO CONECTADO</H2>
+<body class="star">
+<div class="container">
+<h1 align="center">BIENVENIDOS</h1>
+<!--<H2>USUARIO CONECTADO</H2>
+
 <div class="row">
   <div  *ngFor="let usuario of arregloUsuario">
     <div class="col-sm-4" *ngIf="usuario.conectado">
@@ -123,21 +125,38 @@
       </div>
     </div>
 
+
     </div>
   </div>
-</div>
+</div>-->
 
-<h2>PLANETAS DE STAR WARS</h2>
+<h2 align="center">PLANETAS DE STAR WARS</h2>
 <br>
-<button class="btn btn-outline-success" (click)="cargarPlanetas()" >Cargar planetas</button>
-<div>
-  <div *ngFor="let planeta of planetas">
-    <ul>
-      <li>{{planeta.name}}</li>
-    </ul>
+  <p align="center"> <button class="btn btn-outline-success" (click)="cargarPlanetas()" >Cargar Planetas</button></p>
+  <br>
+  <br>
+  <div >
+  <div class="row">
+    <div class="col-sm-6 " *ngFor = "let planeta of planetas; let i = index">
+      <figure class="figure">
+        <img style="width: 300px" src="{{arregloImagenes[i]}}" class="figure-img img-fluid rounded" alt="{{planeta.name}}">
+        <figcaption class="figure-caption">
+          <p><b>Nombre:</b> {{planeta.name}}</p>
+          <p><b>Periodo de rotacion:</b> {{planeta.rotation_period}}</p>
+          <p><b>Periodo orbital:</b> {{planeta.orbital_period}}</p>
+          <p><b>Diametro:</b> {{planeta.diameter}}</p>
+          <p><b>Clima:</b> {{planeta.diameter}}</p>
+          <p><b>Gravedad:</b> {{planeta.gravity}}</p>
+          <p><b>Terreno:</b> {{planeta.terrain}}</p>
+          <p><b>Superficie de agua:</b> {{planeta.surface_water}}</p>
+          <p><b>Poblacion:</b> {{planeta.population}}</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
   </div>
 </div>
-
+</body>
 <!--
 <p *ngIf="true">TRUE</p>
 <p *ngIf="false">FALSE</p>
