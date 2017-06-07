@@ -2,16 +2,20 @@
 import { Component, OnInit } from '@angular/core';
 import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
+import {UsuarioClass} from "../../Clases/UsuarioClass";
 
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css']
 })
+
 export class InicioComponent implements OnInit {
 
-  nombre = 'Kevin';
-  planetas: PlanetaStarWars;
+  nombre: String = 'Kevin';
+  usuarios:UsuarioClass[]=[];
+  nuevoUsuario:UsuarioClass=new UsuarioClass();
+  planetas: any;
   // cmmand + a y luego command + alt + l
   arregloImagenes = [
     'https://vignette1.wikia.nocookie.net/es.starwars/images/4/4a/Alderaan.jpg/revision/latest?cb=20100723184830',
@@ -55,6 +59,19 @@ export class InicioComponent implements OnInit {
 
   ngOnInit() {
     //Esta listo el componente
+    this._http
+      .get("http://localhost:1337/Usuarios")
+      .subscribe(
+        respuesta=>{
+          let rjson:UsuarioClass[]=respuesta.json();
+          this.usuarios=;
+          console.log("Usuarios: "this.usuarios);
+        },
+        error=>{
+          console.log("Error",error);
+        }
+
+      )
   }
 
   //sintaxis de tipo void
@@ -94,8 +111,28 @@ export class InicioComponent implements OnInit {
         }
       );
   }
-}
 
+
+  crearUsuario() {
+    console.log("Entro a crear usuario");
+    let usuario: UsuarioClass = {
+      nombre: this.nuevoUsuario.nombre
+    }
+    this._http
+      .post("http://localhost:1337/Usuario",usuario)
+      .subscribe(
+        respuesta => {
+          let respuestaJson = respuesta.json();
+          console.log(respuestaJson);
+        },
+        error => {
+          console.log("Error", error);
+        }
+      )
+  }
+
+}
+/*
 interface PlanetaStarWars {
   name: string;
   rotation_period: number;
@@ -111,4 +148,5 @@ interface PlanetaStarWars {
   created: string;
   edited: string;
   url: string;
-}
+}*/
+

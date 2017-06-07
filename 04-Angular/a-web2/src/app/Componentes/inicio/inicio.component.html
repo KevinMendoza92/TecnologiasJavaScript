@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/04-Angular/a-web2/src/assets/Bootstrap/css/bootstrap.css">
-<link rel="stylesheet" href="/04-Angular/a-web2/src/app/Componentes/inicio/inicio.component.css">
+<link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
+<!--<link rel="stylesheet" href="/04-Angular/a-web2/src/app/Componentes/inicio/inicio.component.css">
 <!-- SAEW
 <div >
 
@@ -108,7 +108,7 @@
 <button (blur)="cambiarOtroNombre()" >clic</button>
 <h1 (click)="cambianNombreInput(nombreEtiqueta)">Lenin a Rafico</h1>
 </div>-->
-
+<!--
 <body class="star">
 <div class="container">
 <h1 align="center">BIENVENIDOS</h1>
@@ -129,7 +129,7 @@
     </div>
   </div>
 </div>-->
-
+<!--
 <h2 align="center">PLANETAS DE STAR WARS</h2>
 <br>
   <p align="center"> <button class="btn btn-outline-success" (click)="cargarPlanetas()" >Cargar Planetas</button></p>
@@ -155,7 +155,7 @@
       </figure>
     </div>
   </div>
-  </div>-->
+  </div>
 </div>
 </body>
 <!--
@@ -175,3 +175,26 @@
 </div>
 -->
 
+<div class="container">
+<h1>BIENVENIDOS</h1>
+<h2>Usuario</h2>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="form-group">
+      <pre>
+        {{ nuevoUsuario  | json}}
+      </pre>
+      <label class="col-form-label">
+        Nombre Usuario :
+      </label>
+      <input class="form-control"
+              placeholder="Ingrese nuevo nombre"
+              [(ngModel)]="nuevoUsuario.nombre" type="text">
+    </div>
+    <button class="btn btn-success" (click)="crearUsuario()">
+      Crear usuario
+    </button>
+  </div>
+</div>
+</div>
