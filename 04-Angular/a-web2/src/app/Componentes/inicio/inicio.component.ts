@@ -13,9 +13,9 @@ import {UsuarioClass} from "../../Clases/UsuarioClass";
 export class InicioComponent implements OnInit {
 
   nombre: String = 'Kevin';
-  usuarios:UsuarioClass[]=[];
-  nuevoUsuario:UsuarioClass=new UsuarioClass();
-  planetas: any;
+  usuarios: UsuarioClass[] = [];
+  nuevoUsuario: UsuarioClass = new UsuarioClass("");
+  planetas: any[]=[];
   // cmmand + a y luego command + alt + l
   arregloImagenes = [
     'https://vignette1.wikia.nocookie.net/es.starwars/images/4/4a/Alderaan.jpg/revision/latest?cb=20100723184830',
@@ -59,18 +59,18 @@ export class InicioComponent implements OnInit {
 
   ngOnInit() {
     //Esta listo el componente
-    this._http
-      .get("http://localhost:1337/Usuarios")
+    this._http.get('http://localhost:1337/usuario/')
       .subscribe(
-        respuesta=>{
-          let rjson:UsuarioClass[]=respuesta.json();
-          this.usuarios=;
-          console.log("Usuarios: "this.usuarios);
-        },
-        error=>{
-          console.log("Error",error);
-        }
+        respuesta => {
+          let respJson:UsuarioClass[]= respuesta.json();
+          console.log("respuesta json:", respJson);
+          this.usuarios=respJson;
+          console.log("Usuarios: ", this.usuarios);
 
+        },
+        error => {
+          console.log("Error", error)
+        }
       )
   }
 
@@ -111,25 +111,35 @@ export class InicioComponent implements OnInit {
         }
       );
   }
-
-
   crearUsuario() {
-    console.log("Entro a crear usuario");
-    let usuario: UsuarioClass = {
-      nombre: this.nuevoUsuario.nombre
-    }
-    this._http
-      .post("http://localhost:1337/Usuario",usuario)
+    console.log("Creo usuario");
+    /*let usuario= {
+     nombre: this.nuevoUsuario.nombre
+     }*/
+    this._http.post('http://localhost:1337/Usuario', this.nuevoUsuario)
       .subscribe(
         respuesta => {
           let respuestaJson = respuesta.json();
-          console.log(respuestaJson);
+          console.log('respuestaJson: ', respuestaJson);
+          this.usuarios.push(respuestaJson);
         },
         error => {
-          console.log("Error", error);
+          console.log("Error", error)
         }
       )
   }
+  eliminarUsuario(id){
+
+    this._http.delete("http://localhost:1337/usuario/"+id).subscribe(respuesta=>{
+      let rJson = respuesta.json();
+      console.log("respuesta json:", rJson);
+      this.usuarios.splice(rJson);
+
+    }, error=>{
+      console.log("error: ", error);
+    });
+  }
+
 
 }
 /*

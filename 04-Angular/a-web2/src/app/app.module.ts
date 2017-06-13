@@ -6,10 +6,14 @@ import { AppComponent } from './app.component';
 import { EstilosComponent } from './estilos/estilos.component';
 import {InicioComponent} from "./Componentes/inicio/inicio.component";
 import { PlanetaStarWarsComponent } from './Componentes/planeta-star-wars/planeta-star-wars.component';
+import { ClimateComponent } from './Componentes/climate/climate.component';
+import { DiameterComponent } from './Componentes/diameter/diameter.component';
+import { GravityComponent } from './Componentes/gravity/gravity.component';
+import { StarWarsComponent } from './Componentes/star-wars/star-wars.component';
 @NgModule({
   declarations: [
     AppComponent,
-    EstilosComponent, InicioComponent, PlanetaStarWarsComponent
+    EstilosComponent, InicioComponent, PlanetaStarWarsComponent, ClimateComponent, DiameterComponent, GravityComponent, StarWarsComponent
   ],
   imports: [
     BrowserModule,

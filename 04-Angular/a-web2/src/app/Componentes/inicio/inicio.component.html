@@ -174,27 +174,48 @@
   </ul>
 </div>
 -->
-
 <div class="container">
-<h1>BIENVENIDOS</h1>
-<h2>Usuario</h2>
+  <div class="container">
+    <h1>BIENVENIDO A LA PAGINA</h1>
 
-<div class="row">
-  <div class="col-sm-6">
-    <div class="form-group">
-      <pre>
-        {{ nuevoUsuario  | json}}
-      </pre>
-      <label class="col-form-label">
-        Nombre Usuario :
-      </label>
-      <input class="form-control"
-              placeholder="Ingrese nuevo nombre"
-              [(ngModel)]="nuevoUsuario.nombre" type="text">
-    </div>
-    <button class="btn btn-success" (click)="crearUsuario()">
-      Crear usuario
+    <button class="btn btn-outline-success" (click)="cargarPlanetas()">
+      <br>
+      <br>
+      CARGAR PLANETAS
     </button>
+    <div class="row">
+      <div class="col-sm-4" *ngFor="let planeta of planetas; let i=index">
+
+        <app-planeta-star-wars [planeta]="planeta"></app-planeta-star-wars>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <pre>
+            {{nuevoUsuario | json }}
+          </pre>
+          <label class="col-form-label">
+            Nombre Usuario:
+          </label>
+          <input class="form-control"
+                 placeholder="Ingrese nuevo nombre"
+                 [(ngModel)]="nuevoUsuario.nombre" type="text">
+        </div>
+        <button class="btn btn-primary" (click)="crearUsuario()">Crear </button>
+      </div>
+    </div>
+    <br>
+    <h3>Usuarios</h3>
+
+    <div class="row">
+      <div class="col-sm-3" *ngFor="let usuario of usuarios;let i = index;">
+        <h3>{{usuario.nombre}}</h3>
+        <p class="card-text">{{usuario.nombre}} </p>
+        <button class="btn btn-danger" (click)="eliminarUsuario(usuario.id)"> Eliminar</button>
+      </div>
+    </div>
   </div>
 </div>
-</div>
+
+
