@@ -7,7 +7,8 @@ export class UsuarioClass {
   constructor(nombre?: String,
               public id?:number,
               public createdAt?:Date,
-              public updateAt?:Date) {
+              public updateAt?:Date,
+              public editar?:boolean) {
   }
 
 }
