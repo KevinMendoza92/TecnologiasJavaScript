@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {ActivatedRoute, Router} from "@angular/router";
 @Component({
   selector: 'app-pagina2',
   templateUrl: './pagina2.component.html',
@@ -10,6 +10,11 @@ export class Pagina2Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.rutaActiva.params.subscribe(
+      params=>{
+        console.log("Parametros:",params);
+      }
+    )
   }
 
 }
