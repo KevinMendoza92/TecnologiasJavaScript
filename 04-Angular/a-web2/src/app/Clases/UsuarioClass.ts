@@ -1,14 +1,14 @@
 /**
  * Created by USRDEL on 7/6/17.
  */
-export class UsuarioClass {
-  nombre: String;
 
-  constructor(nombre?: String,
+export class UsuarioClass {
+
+  constructor(public nombre?:string,
               public id?:number,
               public createdAt?:Date,
-              public updateAt?:Date,
-              public editar?:boolean) {
+              public updatedAt?:Date,
+              public editar?:boolean){
   }
 
 }
